@@ -1,15 +1,15 @@
 
-# `go-libp2p` examples and tutorials
+# `go-libp2p` 示例和教程
 
-In this folder, you can find a variety of examples to help you get started in using go-libp2p. Every example as a specific purpose and some of each incorporate a full tutorial that you can follow through, helping you expand your knowledge about libp2p and p2p networks in general.
+在这个文件夹中，您可以找到各种示例来帮助您开始使用go-libp2p。 每个示例都作为特定的目的，并且每个示例都包含一个可以遵循的完整教程，帮助您扩展有关libp2p和p2p网络的知识。
 
-Let us know if you find any issue or if you want to contribute and add a new tutorial, feel welcome to submit a pr, thank you!
+让我们知道如果你发现任何问题，或者如果你想贡献并添加一个新的教程，感到欢迎提交一个公关，谢谢！
 
-## Examples and Tutorials
+## Examples and Tutorials 示例和教程
 
-- [The libp2p 'host'](./libp2p-host)
-- [Building an http proxy with libp2p](./http-proxy)
-- [Protocol Multiplexing with multicodecs](./protocol-multiplexing-with-multicodecs)
-- [An echo host](./echo)
-- [Multicodecs with protobufs](./multipro)
-- [P2P chat application](./chat)
+- [libp2p的'主机'](./libp2p-host)
+- [用libp2p建立一个HTTP代理](./http-proxy)
+- [协议与多节点复用](./protocol-multiplexing-with-multicodecs)
+- [echo主机](./echo)
+- [带有protobufs的多节点](./multipro)
+- [P2P聊天应用程序](./chat)

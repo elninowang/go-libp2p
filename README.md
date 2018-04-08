@@ -23,46 +23,46 @@
   <br>
 </p>
 
-# Project status
+# 项目状态
 
 [![Throughput Graph](https://graphs.waffle.io/libp2p/go-libp2p/throughput.svg)](https://waffle.io/libp2p/go-libp2p/metrics/throughput)
 
 # Table of Contents
 
-- [Background](#background)
-- [Bundles](#bundles)
-- [Usage](#usage)
-  - [Install](#install)
+- [背景](#background)
+- [绑定](#bundles)
+- [用法](#usage)
+  - [安装](#install)
   - [API](#api)
-  - [Examples](#examples)
-- [Development](#development)
-  - [Tests](#tests)
-  - [Packages](#packages)
-- [Contribute](#contribute)
-- [License](#license)
+  - [示例](#examples)
+- [开发](#development)
+  - [测试](#tests)
+  - [包](#packages)
+- [帮助我们](#contribute)
+- [许可](#license)
 
-## Background
+## 背景
 
-[libp2p](https://github.com/libp2p/specs) is a networking stack and library modularized out of [The IPFS Project](https://github.com/ipfs/ipfs), and bundled separately for other tools to use.
+[libp2p](https://github.com/libp2p/specs)是一个网络栈和模块化的[IPFS项目](https://github.com/ipfs/ipfs)，并分别捆绑为其他工具使用。
+> 
+libp2p是长期而艰苦的理解追求的产物 - 深入探索互联网的网络堆栈，以及过去丰富的点对点协议。 在过去的15年中构建大规模的点对点系统非常复杂且困难，libp2p是解决这个问题的一种方法。 它是一个“网络协议栈” - 一种协议套件，它可以清楚地分离问题，并使复杂的应用程序只使用他们绝对需要的协议，而不会放弃互操作性和可升级性。 libp2p由IPFS发展而来，但它的构建使许多人可以使用它，适用于许多不同的项目。
 >
-libp2p is the product of a long, and arduous quest of understanding -- a deep dive into the internet's network stack, and plentiful peer-to-peer protocols from the past. Building large scale peer-to-peer systems has been complex and difficult in the last 15 years, and libp2p is a way to fix that. It is a "network stack" -- a protocol suite -- that cleanly separates concerns, and enables sophisticated applications to only use the protocols they absolutely need, without giving up interoperability and upgradeability. libp2p grew out of IPFS, but it is built so that lots of people can use it, for lots of different projects.
->
-> We will be writing a set of docs, posts, tutorials, and talks to explain what p2p is, why it is tremendously useful, and how it can help your existing and new projects. But in the meantime, check out
+> 我们将编写一套文档，文章，教程和讲座来解释p2p是什么，它为什么非常有用，以及它如何帮助您现有的和新的项目。 但在此期间，请检查
 >
 > - [**The libp2p Specification**](https://github.com/libp2p/specs)
 > - [**go-libp2p implementation**](https://github.com/libp2p/go-libp2p)
 > - [**js-libp2p implementation**](https://github.com/libp2p/js-libp2p)
 
 
-## Bundles
+## 捆绑
 
-There is currently only one bundle of `go-libp2p`, this package. This bundle is used by [`go-ipfs`](https://github.com/ipfs/go-ipfs).
+目前只有一包`go-libp2p`，这个包。 该软件包由[`go-ipfs`]使用。
 
-## Usage
+## 用法
 
-`go-libp2p` repo is a place holder for the list of Go modules that compose Go libp2p, as well as its entry point.
+`go-libp2p` repo是构成Go libp2p的Go模块列表以及其入口点。
 
-### Install
+### 安装
 
 ```bash
 > go get -d github.com/libp2p/go-libp2p/...
@@ -75,29 +75,29 @@ There is currently only one bundle of `go-libp2p`, this package. This bundle is 
 
 [![GoDoc](https://godoc.org/github.com/ipfs/go-libp2p?status.svg)](https://godoc.org/github.com/libp2p/go-libp2p)
 
-### Examples
+### 示例
 
-Examples can be found on the [examples folder](examples).
+示例可以在[examples folder]上找到（示例）。
 
-## Development
+## 开发
 
-### Dependencies
+### 依赖
 
-While developing, you need to use [gx to install and link your dependencies](https://github.com/whyrusleeping/gx#dependencies), to do that, run:
+在开发过程中，您需要使用[gx来安装并链接您的依赖项](https://github.com/whyrusleeping/gx#dependencies)，执行以下操作：
 
 ```sh
 > make deps
 ```
 
-Before commiting and pushing to Github, make sure to rewind the gx'ify of dependencies. You can do that with:
+在提交并推送到Github之前，请确保将依赖项的礼物倒回。 你可以这样做：
 
 ```sh
 > make publish
 ```
 
-### Tests
+### 测试
 
-Running of individual tests is done through `gx test <path to test>`
+独立测试的运行是通过gx test `<path to test>` 完成
 
 ```bash
 $ cd $GOPATH/src/github.com/libp2p/go-libp2p
@@ -105,11 +105,11 @@ $ make deps
 $ gx test ./p2p/<path of module you want to run tests for>
 ```
 
-### Packages
+### 包
 
 > **WIP**
 
-List of packages currently in existence for libp2p:
+libp2p当前存在的软件包列表：
 
 | Package            | Version | CI                  |
 |--------------------|---------|---------------------|
@@ -123,31 +123,32 @@ List of packages currently in existence for libp2p:
 | **Miscellaneous**                                  |
 | **Data Types**                                     |
 
-# Contribute
+# 帮助我们 
 
-go-libp2p is part of [The IPFS Project](https://github.com/ipfs/ipfs), and is MIT licensed open source software. We welcome contributions big and small! Take a look at the [community contributing notes](https://github.com/ipfs/community/blob/master/contributing.md). Please make sure to check the [issues](https://github.com/ipfs/go-libp2p/issues). Search the closed ones before reporting things, and help us with the open ones.
+go-libp2p是[The IPFS Project](https://github.com/ipfs/ipfs)的一部分，并且是MIT许可的开源软件。 我们欢迎大大小小的贡献！ 看看[社区贡献笔记](https://github.com/ipfs/community/blob/master/contributing.md)。 请确保检查[问题](https://github.com/ipfs/go-libp2p/issue)。 在提交问题之前搜关闭的内容，并帮助我们开放。
 
-Guidelines:
+指南
 
-- read the [libp2p spec](https://github.com/libp2p/specs)
-- please make branches + pull-request, even if working on the main repository
-- ask questions or talk about things in [Issues](https://github.com/libp2p/go-libp2p/issues) or #ipfs on freenode.
-- ensure you are able to contribute (no legal issues please-- we use the DCO)
-- run `go fmt` before pushing any code
-- run `golint` and `go vet` too -- some things (like protobuf files) are expected to fail.
-- get in touch with @jbenet and @diasdavid about how best to contribute
-- have fun!
+- 阅读[libp2p规格](https://github.com/libp2p/specs)
+- 即使在主存储库上工作，也请提出分支机构+拉取请求
+- 在[Issues问题](https://github.com/libp2p/go-libp2p/issues)或freenode上的#ipfs中提出问题或讨论问题。
+- 确保你能够做出贡献（请不要出现法律问题 - 我们使用DCO）
+- 在推送任何代码之前运行`go fmt`
+- 运行`golint`和`go vet` - 有些东西（比如protobuf文件）预计会失败。
+- 联系@jbenet和@diasdavid了解如何做出最佳贡献
+- 玩的开心！
 
-There's a few things you can do right now to help out:
- - Go through the modules below and **check out existing issues**. This would be especially useful for modules in active development. Some knowledge of IPFS/libp2p may be required, as well as the infrasture behind it - for instance, you may need to read up on p2p and more complex operations like muxing to be able to help technically.
- - **Perform code reviews**.
- - **Add tests**. There can never be enough tests.
+你现在可以做些事情来帮忙：
 
-## Modularizing go-libp2p
+ - 浏览以下模块并**检查现有问题**。 这对积极开发中的模块特别有用。 可能需要一些关于IPFS/libp2p的知识，以及背后的infrasture - 例如，您可能需要阅读p2p和更复杂的操作（如复用）才能在技术上提供帮助。
+  - **执行代码评论**。
+  - **添加测试**。 永远不会有足够的测试。
 
-We have currently a work in progress of modularizing go-libp2p from a repo monolith to several packages in different repos that can be reused for other projects of swapped for custom libp2p builds.
+## 模块化go-libp2p
 
-We want to maintain history, so we'll use git-subtree for extracting packages. Find instructions below:
+目前我们正在进行一项工作，即将rep-monolith中的go-libp2p模块化到不同仓库中的几个软件包，这些软件包可以重复用于其他交换自定义libp2p版本的项目。
+
+我们希望保留历史记录，所以我们将使用git-subtree来提取包。 查找以下说明：
 
 ```sh
 # 1) create the extracted tree (has the directory specified as -P as its root)

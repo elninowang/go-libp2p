@@ -2,13 +2,16 @@
 
 # Protocol Multiplexing using multicodecs with libp2p
 
-This examples shows how to use multicodecs (i.e. json) to encode and transmit information between LibP2P hosts using LibP2P Streams.
+# 使用libp2p多代码的协议复用
 
-Multicodecs present a common interface, making it very easy to swap the codec implementation if needed.
 
-This example expects that you area already familiar with the [echo example](https://github.com/libp2p/go-libp2p/tree/master/examples/echo).
+本示例说明如何使用多代码（即json）在使用LibP2P流的LibP2P主机之间编码和传输信息。
 
-## Build
+Multicodecs提供了一个通用接口，如果需要的话，可以很容易地交换编解码器实现。
+
+这个例子期望你已经熟悉了 [echo example](https://github.com/libp2p/go-libp2p/tree/master/examples/echo)。
+
+## 构建
 
 From `go-libp2p` base folder:
 
@@ -17,18 +20,18 @@ From `go-libp2p` base folder:
 > go build -o multicodecs ./examples/protocol-multiplexing-with-multicodecs
 ```
 
-## Usage
+## 用法
 
 ```
 > ./multicodecs
 
 ```
 
-## Details
+## 细节
 
-The example creates two LibP2P Hosts. Host1 opens a stream to Host2. Host2 has an `StreamHandler` to deal with the incoming stream. This is covered in the `echo` example.
+该示例创建两个LibP2P主机。 Host1向Host2打开一个流。 Host2有一个`StreamHandler`来处理输入流。 这在`echo`例子中有所介绍。
 
-Both hosts simulate a conversation. But rather than sending raw messages on the stream, each message in the conversation is encoded under a `json` object (using the `json` multicodec). For example:
+两台主机都可以模拟对话。 但不是在流上发送原始消息，会话中的每条消息都编码在一个`json`对象下（使用`json`多重代码）。 例如：
 
 ```
 {
@@ -38,4 +41,4 @@ Both hosts simulate a conversation. But rather than sending raw messages on the 
 }
 ```
 
-The stream lasts until one of the sides closes it when the HangUp field is `true`.
+当HangUp字段为`true`时，该流持续到其中一方关闭它。

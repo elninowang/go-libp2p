@@ -1,10 +1,10 @@
-# The libp2p 'host'
+# libp2p '主机'
 
-For most applications, the host is the basic building block you'll need to get started. This guide will show how to construct and use a simple host.
+对于大多数应用程序来说，主机是您开始所需的基本构建块。 本指南将介绍如何构建和使用简单的主机。
 
-The host is an abstraction that manages services on top of a swarm. It provides a clean interface to connect to a service on a given remote peer.
+主机是一个管理群体顶部服务的swarm。 它提供了一个干净的接口来连接到给定的远程peer服务。
 
-First, you'll need an ID, and a place to store that ID. To generate an ID, you can do the following:
+首先，您需要一个ID和一个地方来存储该ID。 要生成ID，您可以执行以下操作：
 
 ```go
 import (
@@ -34,7 +34,7 @@ ps.AddPrivKey(pid, priv)
 ps.AddPubKey(pid, pub)
 ```
 
-Next, you'll need at least one address that you want to listen on. You can go from a string to a multiaddr like this:
+接下来，您至少需要一个您想要监听的地址。 你可以像这样从一个字符串到一个multiaddr：
 
 ```go
 import ma "github.com/multiformats/go-multiaddr"
@@ -47,7 +47,7 @@ if err != nil {
 }
 ```
 
-Now you know who you are, and where you live (in a manner of speaking). The next step is setting up a 'swarm network' to handle all the peers you will connect to. The swarm handles incoming connections from other peers, and handles the negotiation of new outbound connections.
+现在你知道你是谁了，你住在哪里(以一种说话的方式)。 下一步是建立一个'swarm network'来处理你要连接的所有peer。 该swarm处理来自其他peer的传入连接，并处理新的出站连接的协议。
 
 ```go
 import (
@@ -65,7 +65,7 @@ if err != nil {
 }
 ```
 
-At this point, we have everything needed to finally construct a host. That call is the simplest one so far:
+在这一点上，我们拥有最终构建主机所需的一切。 这个调用是目前为止最简单的一个：
 
 ```go
 import bhost "github.com/libp2p/go-libp2p/p2p/host/basic"
@@ -73,8 +73,9 @@ import bhost "github.com/libp2p/go-libp2p/p2p/host/basic"
 myhost := bhost.New(netw)
 ```
 
-And thats it, you have a libp2p host and you're ready to start doing some awesome p2p networking!
+这就是它，你有一个libp2p主机，你准备开始做一些很棒的P2P网络！
 
-In future guides we will go over ways to use hosts, configure them differently (hint: there are a huge number of ways to set these up), and interesting ways to apply this technology to various applications you might want to build.
+在将来的指南中，我们将讨论如何使用主机，以不同方式配置它们（提示：有很多种方法来设置它们），以及将这种技术应用到您可能想要构建的各种应用程序的有趣方法。
 
-To see this code all put together, take a look at [host.go](host.go).
+
+要将这些代码放在一起，请查看[host.go](host.go)。
